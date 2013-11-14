@@ -38,8 +38,10 @@ class WebNode(Node):
         values = [self.kwargs[v].resolve(context) for v in self.kwargs]
         resolved_kwargs = dict(zip(self.kwargs.keys(), values))
         resolved_args = [v.resolve(context) for v in self.args]
-        return registry.get(self.name).render(context, resolved_args,
-                                              resolved_kwargs)
+        webnode = registry.get(self.name)
+        if not webnode:
+            raise TemplateSyntaxError("webnode '%s' is not exist" % self.name)
+        return webnode.render(context, resolved_args, resolved_kwargs)
 
 
 @register.tag(name='webnode')

@@ -35,7 +35,7 @@ class WidgetsCache(object):
         """
         returns widget instance by name
         """
-        return self.widgets[name]
+        return self.widgets.get(name)
 
 registry = WidgetsCache()
 
