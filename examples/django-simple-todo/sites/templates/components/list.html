@@ -1,0 +1,6 @@
+{% load webnode %}
+<ul>
+    {% for todo in todos %}
+    {% webnode CPT_ITEM todo %}
+    {% endfor %}
+</ul>
