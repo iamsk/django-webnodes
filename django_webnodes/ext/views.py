@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.http import Http404
 from django.template import Context
 from django.views.generic.base import View
-from django_webnodes.loading import registry
+from ..loading import registry
 
 
 class WebNode(View):
