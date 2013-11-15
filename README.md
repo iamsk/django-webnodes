@@ -38,11 +38,19 @@ Calling from template:
     
 ## Extension
 
-If you want see this webnode single, add this in your urls' urlpatterns
+If you want see this webnode independently, add this in your urls' urlpatterns
 
 	url(r'^webnodes/', include('django_webnodes.ext.urls'))
 	
 Then open `http://127.0.0.1:8000/webnodes/RatingsNode?app_id=414603431` in your browser, you will see it.
+
+## Why use this?
+
+1. Decoupling the logic of Front-End;
+2. Decoupling the logic of Back-End;
+3. Make each feature(function) as a webnode to improve cohesion(because each feature's template and data(include the logic of fetch data) are always strongly correlated);
+4. We can test each feature independently;
+5. easy to realize partial renewal.
 
 # Refs
 
