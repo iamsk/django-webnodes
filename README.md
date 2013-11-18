@@ -35,14 +35,18 @@ Calling from template:
     {% load webnode %}
 
     <p>{% webnode RatingsNode app.id %}</p>
-    
+
 ## Extension
 
 If you want see this webnode independently, add this in your urls' urlpatterns
 
 	url(r'^webnodes/', include('django_webnodes.ext.urls'))
-	
+
 Then open `http://127.0.0.1:8000/webnodes/RatingsNode?app_id=414603431` in your browser, you will see it.
+
+## Todos
+
+support css and javascript
 
 ## Why use this?
 
