@@ -19,7 +19,7 @@ For example, if you are implementing a app statistics website, and you want to h
 
 First, create a Python module for your webnods, e.g., webnodes.py(place it in ``yourapp`` module)
 
-    from django_webnodes import WebNode
+    from webnodes import WebNode
 
     class RatingsNode(WebNode):
 
@@ -40,7 +40,7 @@ Calling from template:
 
 If you want see this webnode independently, add this in your urls' urlpatterns
 
-	url(r'^webnodes/', include('django_webnodes.ext.urls'))
+	url(r'^webnodes/', include('webnodes.ext.urls'))
 
 Then open `http://127.0.0.1:8000/webnodes/RatingsNode?app_id=414603431` in your browser, you will see it.
 

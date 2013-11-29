@@ -124,7 +124,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
      'django.contrib.admindocs',
      'simpletodo',
-     'django_webnodes',
+     'webnodes',
 )
 
 # A sample logging configuration. The only tangible logging

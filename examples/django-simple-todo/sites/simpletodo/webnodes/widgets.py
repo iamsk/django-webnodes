@@ -1,4 +1,4 @@
-from django_webnodes import WebNode
+from webnodes import WebNode
 
 from simpletodo.models import Todo
 

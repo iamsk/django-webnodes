@@ -1,16 +1,28 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
-    name='django_webnodes',
+    name='django-webnodes',
     version='0.0.1',
+    description='A re-usable bussiness component, modular unit on a page',
+    long_description=open('README.md').read(),
     author='iamsk',
     author_email='iamsk.info@gmail.com',
-    packages=['django_webnodes', 'django_webnodes.templatetags',
-              'django_webnodes.ext'],
-    url='https://github.com/bin-zhang/django_webnodes',
-    description='',
-    long_description=open('README.md').read(),
+    url='https://github.com/iamsk/django-webnodes',
+    packages=find_packages(exclude=('examples',)),
     install_requires=[
-        "django >= 1.3.7",
-    ]
+        "django>=1.3.7,<1.7",
+    ],
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
+    ],
+    include_package_data=True,
+    zip_safe=False,
 )

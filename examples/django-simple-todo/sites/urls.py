@@ -22,7 +22,7 @@ urlpatterns = patterns('',
 
     url('^$', 'simpletodo.views.index', name='idx'),
     url(r'^todo/', include('simpletodo.urls')),
-    url(r'^webnodes/', include('django_webnodes.ext.urls')),
+    url(r'^webnodes/', include('webnodes.ext.urls')),
 )
 
 urlpatterns += staticfiles_urlpatterns()
