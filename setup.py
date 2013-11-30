@@ -1,3 +1,4 @@
+import os
 from setuptools import setup, find_packages
 
 def read(fname):
@@ -5,7 +6,7 @@ def read(fname):
 
 setup(
     name='django-webnodes',
-    version='0.0.1',
+    version='0.0.3',
     description='Re-usable bussiness components, modular units on a page',
     long_description=read('README.md'),
     author='iamsk',
