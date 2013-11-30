@@ -1,10 +1,13 @@
 from setuptools import setup, find_packages
 
+def read(fname):
+    return open(os.path.join(os.path.dirname(__file__), fname)).read()
+
 setup(
     name='django-webnodes',
     version='0.0.1',
     description='Re-usable bussiness components, modular units on a page',
-    long_description=open('README.md').read(),
+    long_description=read('README.md'),
     author='iamsk',
     author_email='iamsk.info@gmail.com',
     url='https://github.com/iamsk/django-webnodes',
