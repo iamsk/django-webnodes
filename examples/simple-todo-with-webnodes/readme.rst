@@ -87,5 +87,10 @@ Django Admin:
 =============
 
 代码基于 https://github.com/vicalloy/django-simple-todo
-删除了很多不必要的代码
+删除了一些不必要的代码
 加入了 webnodes 的支持
+其他功能保持不变
+webnodes 测试地址：
+1. /webnodes/ListNode/
+2. /webnodes/ItemNode/
+3. /webnodes/AddNode/

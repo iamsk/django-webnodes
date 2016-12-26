@@ -7,7 +7,8 @@ from django.conf import settings
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = patterns(
+    '',
     # Examples:
     # url(r'^$', 'simple_todo_site.views.home', name='home'),
     #url(r'^simple_todo_site/', include('simple_todo_site.foo.urls')),
@@ -21,7 +22,7 @@ urlpatterns = patterns('',
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     url('^$', 'simpletodo.views.index', name='idx'),
-    url(r'^todo/', include('simpletodo.urls')),
+    url(r'^todos/', include('simpletodo.urls')),
     url(r'^webnodes/', include('webnodes.ext.urls')),
 )
 
