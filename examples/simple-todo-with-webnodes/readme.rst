@@ -82,3 +82,10 @@ Django Admin:
     #http://127.0.0.1:8000/admin/
     
 #. 接下来，略...
+
+测试 Demo 说明
+=============
+
+代码基于 https://github.com/vicalloy/django-simple-todo
+删除了很多不必要的代码
+加入了 webnodes 的支持
